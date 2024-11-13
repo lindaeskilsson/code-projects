@@ -1,0 +1,136 @@
+.header {
+  background-image: url(https://images.pexels.com/photos/12672171/pexels-photo-12672171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 400px;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.headerBtn {
+  background-color: #eb5f0ed2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: #08a5bad8;
+  border: 0px solid #EB5E0E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerIcon {
+  color: rgb(255, 255, 255);
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: none;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  background-color: #ffffff00;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.headerSearchText {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 70px;
+  background: linear-gradient(#08a5ba3d, #065560);
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  box-shadow: 0px 0px -10px -5px #08a5ba54;
+  font-weight: 200;
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #08A5BA;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}

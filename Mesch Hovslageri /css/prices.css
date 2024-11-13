@@ -1,0 +1,115 @@
+/* Section prices */
+
+.prices-and-services {
+    height:max-content;
+    text-align:center;
+}
+
+.prices-thead {
+    display:grid;
+    grid-template-columns:1fr max-content 1fr;
+    gap:20px;
+}
+
+.line {
+    padding-top:15px;
+    height:2px;
+    border-bottom:2px solid var(--darkShade);
+}
+
+.prices-tbody {
+    padding-top:40px;
+    display:grid;
+    gap:20px;
+}
+
+.prices-tbody div p {
+    font-size:18px;
+    padding:5px 0 5px 0;
+}
+
+/* Section booking information */
+
+.booking-info {
+    margin:auto;
+    background-color:var(--lightShade);
+}
+
+.booking-info h2 {
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.accordion {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align:left;
+    font-size:18px;
+    margin:auto;
+    margin-top:15px;
+    padding:1.5rem;
+    background-color:#fff;
+    color:var(--darkShade);
+    cursor:pointer;
+}
+
+.accordion p {
+    width:max-content;
+}
+
+.accordion img {
+    height:20px;
+    justify-self:right;
+}
+
+.panel {
+    margin:auto;
+    height:0px;
+    transition:all .3s ease-out;
+    overflow:hidden;
+    background-color:#fff;
+}
+
+.panel-content {
+    padding:1rem 1.5rem 2rem 1.5rem;
+}
+
+.panel ul {
+    padding:1rem 0 1rem 2rem;
+    line-height:1.5rem;
+}
+
+.panel-content-gap {
+    padding-bottom:1rem;
+}
+
+.booking-info .button {
+    margin-top:3rem;
+}
+
+/* Breakpoints for responsive design */
+
+@media only screen and (min-width:1300px) {
+    .prices-and-services {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .accordion {
+        width:40vw;
+    }
+
+    .panel {
+        width:40vw;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .accordion {
+        padding:1.5rem 2rem;
+    }
+
+    .panel-content {
+        padding:1rem 2rem 2rem 2rem;
+    }
+}

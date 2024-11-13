@@ -1,0 +1,75 @@
+[
+  {
+    "cardID": 1,
+    "headerQuiz": "Fråga 1.",
+    "question": "Vad är co2?",
+    "correct_answer": "Koldioxid",
+    "incorrect_answers": ["Väte", "Vatten"]
+  },
+  {
+    "cardID": 2,
+    "headerQuiz": "Fråga 2.",
+    "question": "Varför stiger havsnivån",
+    "correct_answer": "Smältande glaciärer",
+    "incorrect_answers": ["Mycket regn", "Dåligt väder"]
+  },
+  {
+    "cardID": 3,
+    "headerQuiz": "Fråga 3.",
+    "question": "Vad är växthusgaser?",
+    "correct_answer": "Samlingsnamn för alla gaser som finns i atmosfären",
+    "incorrect_answers": [
+      "Annat ord för avgaser",
+      "Växtätande djur som släpper väder och skapar gas runt husområden"
+    ]
+  },
+  {
+    "cardID": 4,
+    "headerQuiz": "Fråga 4.",
+    "question": "Vad är en vanlig konsekvens av höjd global temperatur?",
+    "correct_answer": "Fiskarna dör",
+    "incorrect_answers": ["Vattnet i haven börjar koka", "Värmeböljor"]
+  },
+  {
+    "cardID": 5,
+    "headerQuiz": "Fråga 5.",
+    "question": "Vem bidrar mest till klimatförändringar?",
+    "correct_answer": "Människan",
+    "incorrect_answers": ["Djuren", "Naturen"]
+  },
+  {
+    "cardID": 6,
+    "headerQuiz": "Fråga 6.",
+    "question": "Hur många människor kan potentiellt påverkas av 1cm höjd havsnivå i tillväxtregioner?",
+    "correct_answer": "100",
+    "incorrect_answers": ["10 000", "1 000 000"]
+  },
+  {
+    "cardID": 7,
+    "headerQuiz": "Fråga 7.",
+    "question": "Vilket havsdjur blir påverkad av temperaturökningar?",
+    "correct_answer": "Havssköldpaddan",
+    "incorrect_answers": ["Kaninen", "Måsen"]
+  },
+  {
+    "cardID": "8",
+    "headerQuiz": "Fråga 8.",
+    "question": "Vad kan avgasutsläpp leda till?",
+    "correct_answer": "Försurning av vatten och övergödning",
+    "incorrect_answers": ["Kolsyrat vatten", "Koldioxid"]
+  },
+  {
+    "cardID": 9,
+    "headerQuiz": "Fråga 9.",
+    "question": "Vad är en glaciär?",
+    "correct_answer": "Isar som finns året runt",
+    "incorrect_answers": ["Is som ligger en kort period", "Svart is"]
+  },
+  {
+    "cardID": 10,
+    "headerQuiz": "Fråga 10.",
+    "question": "Hur mycket har jordens temperatur ökat med sedan 1700?",
+    "correct_answer": "4 grader",
+    "incorrect_answers": ["1 grad", "0.6 grader"]
+  }
+]

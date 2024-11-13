@@ -1,0 +1,53 @@
+/* Section request product */
+
+.request-product {
+    background-color:var(--lightShade);
+    text-align:center;
+}
+
+.request-product h1 {
+    margin-bottom:20px;
+}
+
+.request-product p {
+    padding-bottom:2rem;
+}
+
+/* Section image gallery */
+
+.grid-container h2 {
+    font-size:4rem;
+}
+
+.grid-container {
+    margin:auto;
+    columns:4 200px;
+    column-gap:1.5rem;
+}
+
+.grid-container div {
+    width:150px;
+    margin:0 1.5rem 1.5rem 0;
+    display:inline-block;
+    width:100%;
+    padding:5px;
+}
+
+.grid-container img {
+    width:100%;
+}
+
+.temp-message {
+    color:red;
+    padding-top:2rem;
+}
+
+
+/* Breakpoints for responsive design */
+
+@media only screen and (min-width:1300px) {
+    .request-product p {
+        width:40vw;
+        margin:auto;
+    }
+}

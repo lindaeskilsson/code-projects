@@ -1,0 +1,275 @@
+/* Global */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+:root {
+    --darkShade:#282828;
+    --lightShade:#f7f7f7;
+    --accentColor:#93b773;
+}
+
+/* Header */
+
+header {
+    border-bottom:2px solid var(--lightShade);
+}
+
+header img {
+    width:200px;
+}
+
+.skip-to-content {
+    display:none;
+    position:absolute;
+    left:6rem;
+    padding:1rem;
+    transform:translateY(-100%);
+    transition:transform .3s;
+    text-decoration:none;
+    color:var(--darkShade);
+    background-color:#fff;
+    border:2px solid var(--accentColor);
+}
+
+.skip-to-content:focus {
+    transform:translateY(0%);
+}
+
+.skip-to-content:hover {
+    text-decoration:underline;
+    border:2px solid var(--accentColor);
+}
+
+/* Mobile navigation */
+
+.mobile-nav {
+    height:fit-content;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    padding:1rem 2rem 1rem 2rem;
+    background-color:#fff;
+}
+
+/* Hamburger icon */
+
+.icon {
+    justify-self:end;
+    width:2rem;
+    height:2rem;
+    cursor:pointer;
+}
+
+.hamburger {
+    width:2rem;
+    height:4px;
+    background:var(--darkShade);
+    border-radius:5px;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    box-shadow:none;
+    transition:.5s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content:'';
+    position:absolute;
+    width:2rem;
+    height:4px;
+    background:var(--darkShade);
+    border-radius:5px;
+    box-shadow:none;
+    transition:.5s;
+}
+
+.hamburger:before {
+    top:-12px;
+}
+
+.hamburger:after {
+    top:12px;
+}
+
+.icon.active .hamburger {
+    background:rgba(0, 0, 0, 0);
+    box-shadow:none;
+}
+
+.icon.active .hamburger:before {
+    top:0;
+    transform:rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top:0;
+    transform:rotate(135deg);
+}
+
+/* Side menu */
+
+.side-menu {
+    display:none;
+    position:absolute;
+    width:100vw;
+    background-color:var(--lightShade);
+}
+
+.side-menu.toggle {
+    display:block;
+}
+
+.side-menu a {
+    text-decoration:none;
+    color:var(--darkShade);
+    line-height:3rem;
+    display:block;
+    padding-left:1rem;
+    border-bottom:1px solid #fff;
+}
+
+.mobile-current-page {
+    background-color:var(--accentColor);
+}
+
+/* Desktop navigation */
+
+.desktop-nav {
+    display:none;
+}
+
+.desktop-nav a {
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--darkShade);
+    padding-bottom:8px;
+}
+
+.desktop-nav img {
+    margin:0 2rem 0 2rem;
+}
+
+.desktop-current-page {
+    border-bottom:3px solid var(--accentColor);
+    padding-bottom:5px;
+}
+
+/* Main */
+
+main {
+    height:max-content;
+}
+
+section {
+    padding:3rem 3rem 4rem 3rem;
+}
+
+.italics {
+    font-style:italic;
+}
+
+.button {
+    display:block;
+    margin:auto;
+    cursor:pointer;
+    padding:1rem;
+    cursor:pointer;
+    width:fit-content;
+    min-width:180px;
+    letter-spacing:2px;
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#fff;
+    background-color:var(--accentColor);
+}
+
+.temp-message {
+    color:red;
+    padding-top:2rem;
+}
+
+/* Footer */
+
+footer {
+    color:var(--darkShade);
+}
+
+footer nav {
+    padding:2rem 0 3rem 0;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+    text-align:center;
+}
+
+footer .heading {
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-bottom:.5rem;
+}
+
+.social-media img {
+    width:30px;
+}
+
+.social-media a:last-of-type img {
+    margin-left:10px;
+}
+
+/* Breakpoints for responsive design */
+
+@media only screen and (min-width:800px) {
+    header .mobile-nav {
+        display:none;
+    }
+
+    .side-menu a {
+        display:none;
+    }
+
+    header .desktop-nav {
+        visibility:visible;
+        padding-top:20px;
+        padding-bottom:20px;
+        display:grid;
+        grid-template-columns:repeat(5, 1fr);
+        justify-items:center;
+        align-items:center;
+    }
+
+    .skip-to-content {
+        display:block;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    header .desktop-nav {
+        margin:auto;
+        width:60vw;
+    }
+
+    section {
+        margin:auto;
+        width:60vw;
+    }
+
+    footer {
+        width:60vw;
+        margin:auto;
+    }
+
+    footer nav {
+        grid-template-columns:repeat(3, 1fr);
+        justify-items:center;
+        text-align:left;
+    }
+}

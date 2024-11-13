@@ -1,0 +1,36 @@
+/* Section introduction */
+
+.intro {
+    text-align:center;
+    background-color:var(--lightShade);
+}
+
+.intro h1,
+.intro p {
+    padding-bottom:2rem;
+}
+
+.intro img {
+    width:80%;
+    margin-bottom:2rem;
+}
+
+.contextual-link {
+    text-decoration:none;
+    color:var(--accentColor)
+}
+
+@media only screen and (min-width:1300px) {
+    .intro p {
+        width:40vw;
+        margin:auto;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .intro img {
+        height:400px;
+        object-fit:cover;
+        object-position:top;
+    }
+}

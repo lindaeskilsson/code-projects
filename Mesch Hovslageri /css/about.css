@@ -1,0 +1,79 @@
+/* Section introduction */
+
+.intro {
+    text-align:center;
+    background-color:var(--lightShade);
+}
+
+.intro h1,
+.intro p {
+    padding-bottom:2rem;
+}
+
+/* Section image gallery */
+
+.image-gallery {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+    padding:3rem 0;
+}
+
+.media {
+    width:auto;
+    height:250px;
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.media img {
+    max-width:100%;
+    height:auto;
+}
+
+.layer {
+    opacity:0;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:10px;
+    height:90%;
+    background:#fff;
+    color:#151e3f;
+    transition:all 0.9s ease;
+}
+
+.layer p {
+    transition:all 0.9s ease;
+    transform:scale(.1);
+}
+
+.media:hover .layer {
+    opacity:.8;
+    width:90%;
+    transition:all .5s ease;
+}
+
+.media:hover .layer p {
+    transform:scale(1);
+    transition:all .9s ease;
+}
+
+/* Breakpoints for responsive design */
+
+@media only screen and (min-width:1300px) {
+    .intro p {
+        width:40vw;
+        margin:auto;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .image-gallery {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
