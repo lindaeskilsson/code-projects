@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e8b724b.css",
+    "main.js": "/static/js/main.3515ef66.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/guideeskil.png": "/static/media/guideeskil.4728aa1c24fd843a9095.png",
+    "static/media/nottum.png": "/static/media/nottum.1137ec9d270dc4e25e18.png",
+    "static/media/coviddiagram.png": "/static/media/coviddiagram.9f45b444f367fa55c724.png",
+    "static/media/klimatkunskapproto.png": "/static/media/klimatkunskapproto.5429e47a4ce061506b01.png",
+    "static/media/nottumproto.png": "/static/media/nottumproto.8067d1b4c8256081837a.png",
+    "static/media/me.jpg": "/static/media/me.a8ef9af4ba34e952f64e.jpg",
+    "static/media/thesimpleshop.png": "/static/media/thesimpleshop.8575eca6a65dd189675a.png",
+    "static/media/bokshop.png": "/static/media/bokshop.af2df895cb06e70b8909.png",
+    "static/media/klimatkunskap.png": "/static/media/klimatkunskap.80ccb4e6313ab185a975.png",
+    "static/media/resturantverde.png": "/static/media/resturantverde.754f78fc5a97cdf7de85.png",
+    "static/media/cv1.jpg": "/static/media/cv1.f6ff75c271a9db237307.jpg",
+    "static/media/meschhov.png": "/static/media/meschhov.140de6c9a24456289dce.png",
+    "static/media/inloggfunk.png": "/static/media/inloggfunk.1e3aec005e6aadd057f1.png",
+    "static/media/cv2.jpg": "/static/media/cv2.1601d1d09bad0917cd8c.jpg",
+    "index.html": "/index.html",
+    "main.6e8b724b.css.map": "/static/css/main.6e8b724b.css.map",
+    "main.3515ef66.js.map": "/static/js/main.3515ef66.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e8b724b.css",
+    "static/js/main.3515ef66.js"
+  ]
+}
